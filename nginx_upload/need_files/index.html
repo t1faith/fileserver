@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<style>
+header {
+	background-color: #545454;
+	color: #FFFFFF;
+	text-align: left;
+	padding: 1px;
+}
+nav{
+	line-height:30px;	
+	background-color:#FFFFFF;
+	height:100px;
+	width:200px;
+	float:left;
+	text-align:center;
+	padding: 5px;
+}
+footer {
+	background-color: #DCDCDC;
+	color: #4F4F4F;
+	clear: both;
+	text-align: left;
+	padding: 1px;
+}
+</style>
+
+<head>
+<title>FilesServer</title>
+</head>
+
+<frameset rows=10%,*,10% frameborder="0">	
+	<frame src="./head.html" noresize="noresize">
+	<frameset cols=10%,*>
+		<frame src="./content.html" noresize="noresize">
+		<frame src="./hello.html" name="showframe">
+	</frameset>
+	<frame src="./footer.html">
+</frameset>
+
+</html>
