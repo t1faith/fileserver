@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<style>
+header {
+	background-color: #545454;
+	color: #FFFFFF;
+	text-align: left;
+	padding: 1px;
+}
+nav{
+	line-height:30px;	
+	background-color:#FFFFFF;
+	height:100px;
+	width:200px;
+	float:left;
+	text-align:center;
+	padding: 5px;
+}
+footer {
+	background-color: #DCDCDC;
+	color: #4F4F4F;
+	clear: both;
+	text-align: left;
+	padding: 1px;
+}
+</style>
+
+<head>
+<title>FilesServer</title>
+</head>
+
+<body style="background-color:#DCDCDC">
+<header>
+<h2>Files Server</h2>
+</header>
+
+<nav>
+<a href="./files/">View existing files</a>
+<p>Upload files</p>
+</nav>
+
+<form enctype="multipart/form-data" action="/upload" method="post">
+<input type="file" name="file1"><br>
+<input type="submit" name="submit" value="Upload">
+<input type="hidden" name="test" value="value">
+</form>
+
+<footer>
+<hr />
+&copy 2019 yuantu
+</footer>
+</body>
+</html>
